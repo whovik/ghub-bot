@@ -81,9 +81,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.json({
-    message: "Live from backend",
-  });
+  res.json({ success: true, message: "Backend is live from vercel" });
 });
 
 app.post("/github-webhook", async (req, res) => {
